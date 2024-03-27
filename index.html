@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food-Finder-App</title>
+    <style href="style.css" rel="stylesheet"></style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-main-container">
+        <a class="Brand-icon" href="#">
+          <img src="./diet.png" alt="logo" width="40" class="icon-img" />
+        </a>
+        <div class="navbar-container" id="navbarContainer">
+          <ul class="navbar-link-list">
+            <li class="nav-item">
+              <a class="nav-link-home" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-favorites" href="/favorites.html"
+                >Your Favorite Meals</a
+              >
+            </li>
+          </ul>
+          <div class="category-container">
+            <select id="categorySelect" class="form-selector">
+              <option value="">All Categories</option>
+              <option value="Chicken">Chicken</option>
+              <option value="Beef">Beef</option>
+              <option value="Vegetarian">Vegetarian</option>
+              <option value="Lamb">Lamb</option>
+              <option value="Pasta">Pasta</option>
+              <option value="Miscellaneous">Miscellaneous</option>
+            </select>
+            <button id="filterByCategoryBtn" class="filter-button">Filter</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <hr />
+
+    <header class="header">
+      <div class="header-container">
+        <img src="/diet.png" alt="logo" width="80px" class="icon-img" />
+        <h2>Food Finder</h2>
+
+        <p class="header-instruction">
+          Get a random Food now by clicking the button below 👇
+        </p>
+        <button class="food-finder-button" id="getMealBtn">
+          Get Meal
+        </button>
+      </div>
+    </header>
+
+    <hr />
+
+    <main class="main-container">
+      <div class="food-info-container">
+        <h2 id="mealName"></h2>
+        <div class="food-info">
+          <div class="food-info-img">
+            <img id="mealImage" src="" alt="Meal Image" class="img-fluid" />
+          </div>
+          <div class="food-info-text">
+            <p class="fs-3"><strong>Process of Making</strong></p>
+            <p id="mealInstructions"></p>
+            <button id="favoriteBtn" class="favourite-button">
+              Favorite
+            </button>
+          </div>
+        </div>
+
+        <div class="food-receipe-container">
+          <h2>Details:</h2>
+          <hr />
+          <div class="food-details-container" >
+            <p><strong>Category:</strong> <span id="mealCategory"></span></p>
+            <p><strong>Area:</strong> <span id="mealArea"></span></p>
+            <p><strong>Ingredients:</strong></p>
+            <ul id="mealIngredients"></ul>
+          </div>
+          <div class="video-receipe-container">
+            <h2 class="video-receipe">Video Receipe:</h2>
+            <div id="mealVideo"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <hr />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2024 FoodFinder.com</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
