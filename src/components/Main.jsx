@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-
+import '../styles/Main.css';
 import diet from "../images/diet.png";
 import { Link } from "react-router-dom";
+
 
 function Main() {
   const [currentMeal, setCurrentMeal] = useState(null);
@@ -104,6 +105,7 @@ function Main() {
 
   return (
     <div className="App">
+
       <nav className="navbar">
         <div className="navbar-main-container">
           <a className="Brand-icon" href="#">
@@ -123,13 +125,6 @@ function Main() {
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
-
-      <hr />
-
-      <header className="header">
-        <div className="header-container">
           <div className="category-container">
             <select id="categorySelect" className="form-selector">
               <option value="">All Categories</option>
@@ -148,27 +143,30 @@ function Main() {
               Filter
             </button>
           </div>
+        </div>
+      </nav>
 
-          <img src={diet} alt="logo" width="80px" className="icon-img" />
-          <h2>Food Finder</h2>
-
-          <p className="header-instruction">
-            Get a random Food now by clicking the button below 👇
-          </p>
-          <button
-            className="food-finder-button"
-            id="getMealBtn"
-            onClick={displayRandomMeal}
-          >
-            Get Meal
-          </button>
+      <header className="header">
+        <div className="header-container">
+          <div className="food-generator">
+            <h2>Food Finder</h2>
+            <p className="header-instruction">
+              Get a random Food now by clicking the button below 👇
+            </p>
+            <button
+              className="food-finder-button"
+              id="getMealBtn"
+              onClick={displayRandomMeal}
+            >
+              Get Meal
+            </button>
+          </div>
         </div>
       </header>
 
-      <hr />
-
       <main className="main-container">
         <div className="food-info-container">
+          <h1>Your Food</h1>
           <h2 id="mealName"></h2>
           <div className="food-info">
             <div className="food-info-img">
@@ -193,10 +191,10 @@ function Main() {
               </button>
             </div>
           </div>
-
+          <hr />
           <div className="food-receipe-container">
-            <h2>Details:</h2>
-            <hr />
+            <h2>Food Details:</h2>
+
             <div className="food-details-container">
               <p>
                 <strong>Category:</strong> <span id="mealCategory"></span>

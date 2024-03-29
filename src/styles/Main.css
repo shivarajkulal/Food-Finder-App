@@ -1,0 +1,213 @@
+.navbar {
+  background-color: #ffffff; /* Set background color */
+  padding: 15px 0; /* Add padding to top and bottom */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.navbar-main-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space items evenly */
+  max-width: 1200px; /* Set maximum width */
+  margin: 0 auto; /* Center the navbar */
+}
+
+.Brand-icon {
+  text-decoration: none; /* Remove underline */
+}
+
+.icon-img {
+  vertical-align: middle; /* Align image vertically */
+}
+
+.navbar-container {
+  display: flex; /* Use flexbox for layout */
+}
+
+.navbar-link-list {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox for layout */
+}
+
+.nav-item {
+  margin-right: 20px; /* Add margin between items */
+}
+
+.nav-link-home,
+.nav-link-favorites {
+  text-decoration: none; /* Remove underline */
+  color: #333333; /* Set text color */
+  font-weight: bold; /* Set font weight */
+  transition: color 0.3s; /* Add transition effect */
+}
+
+.nav-link-home:hover,
+.nav-link-favorites:hover {
+  color: #ff6347; /* Change text color on hover */
+}
+
+.category-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-selector {
+  margin-right: 10px; /* Add margin between select and button */
+  padding: 5px; /* Add padding */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 4px; /* Add border radius */
+}
+
+.filter-button {
+  padding: 6px 12px; /* Add padding */
+  background-color: #ff6347; /* Set background color */
+  color: #ffffff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Add cursor pointer */
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+.filter-button:hover {
+  background-color: #cc4a34; /* Change background color on hover */
+}
+
+
+/* style for header */
+.header {
+  background-color: #ff6347; /* Set background color */
+  color: #ffffff; /* Set text color */
+  padding: 20px; /* Add padding */
+  text-align: center; /* Align text center */
+}
+
+.header-container {
+  max-width: 800px; /* Set maximum width */
+  margin: 0 auto; /* Center the header */
+}
+
+.food-generator {
+  padding: 20px; /* Add padding */
+}
+
+.food-generator h2 {
+  font-size: 24px; /* Set font size */
+  margin-bottom: 10px; /* Add margin bottom */
+}
+
+.header-instruction {
+  font-size: 16px; /* Set font size */
+  margin-bottom: 20px; /* Add margin bottom */
+}
+
+.food-finder-button {
+  padding: 10px 20px; /* Add padding */
+  background-color: #ffffff; /* Set background color */
+  color: #ff6347; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Add cursor pointer */
+  transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.food-finder-button:hover {
+  background-color: #ff8c79; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+
+ 
+/* style to main  */
+.main-container {
+  max-width: 800px; /* Set maximum width */
+  margin: 0 auto; /* Center the main container */
+  padding: 20px; /* Add padding */
+}
+
+.food-info-container {
+  background-color: #f9f9f9; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Add border radius */
+}
+
+.food-info-container h1 {
+  font-size: 24px; /* Set font size */
+  margin-bottom: 10px; /* Add margin bottom */
+}
+
+.food-info {
+  display: flex; /* Use flexbox for layout */
+  margin-bottom: 20px; /* Add margin bottom */
+}
+
+.food-info-img {
+  flex: 0 0 40%; /* Set flex properties */
+}
+
+.food-info-img img {
+  max-width: 100%; /* Set maximum width */
+  height: auto; /* Set height auto */
+  display: block; /* Make image block element */
+}
+
+.food-info-text {
+  flex: 0 0 60%; /* Set flex properties */
+  padding-left: 20px; /* Add padding left */
+}
+
+.fs-3 {
+  font-size: 20px; /* Set font size */
+  margin-bottom: 10px; /* Add margin bottom */
+}
+
+.favourite-button {
+  padding: 10px 20px; /* Add padding */
+  background-color: #ff6347; /* Set background color */
+  color: #ffffff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Add border radius */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Add cursor pointer */
+  transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.favourite-button:hover {
+  background-color: #ff8c79; /* Change background color on hover */
+}
+
+.food-receipe-container h2 {
+  font-size: 24px; /* Set font size */
+  margin-bottom: 10px; /* Add margin bottom */
+}
+
+.food-details-container p {
+  margin-bottom: 5px; /* Add margin bottom */
+}
+
+.video-receipe-container {
+  margin-top: 20px; /* Add margin top */
+}
+
+.video-receipe-container .video-receipe {
+  font-size: 24px; /* Set font size */
+  margin-bottom: 10px; /* Add margin bottom */
+}
+
+/* style for footer */
+.footer {
+  background-color: #333333; /* Set background color */
+  color: #ffffff; /* Set text color */
+  padding: 20px 0; /* Add padding to top and bottom */
+  text-align: center; /* Align text center */
+}
+
+.footer-container {
+  max-width: 800px; /* Set maximum width */
+  margin: 0 auto; /* Center the footer container */
+}
+
+.footer-container p {
+  margin: 0; /* Remove default margin */
+}
