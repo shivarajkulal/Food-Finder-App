@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import diet from "../images/diet.png";
 import { Link } from "react-router-dom";
-
+import "../styles/Favorites.css";
 function Favorites() {
   useEffect(() => {
     displayFavoriteMeals();
@@ -66,6 +66,7 @@ function Favorites() {
 
   return (
     <div>
+      
       <nav className="navbar">
         <div className="navbar-main-container">
           <a className="Brand-icon" href="#">
@@ -83,12 +84,13 @@ function Favorites() {
           </div>
         </div>
       </nav>
-      <hr />
+
       <main>
         <h1 className="fovorite-meal">Favorite Food</h1>
         <div id="favoriteMealsList" className="favorite-meals-list"></div>
       </main>
-      <hr />
+
+
       <footer className="footer">
         <div className="footer-container">
           <p>&copy; 2024 FoodFinder.com</p>

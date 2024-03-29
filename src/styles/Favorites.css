@@ -1,0 +1,87 @@
+/* style for navbar */
+.navbar {
+  background-color: #ffffff; /* Set background color */
+  padding: 10px 20px; /* Add padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.navbar-main-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space items evenly */
+}
+
+.Brand-icon {
+  text-decoration: none; /* Remove underline */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+  color: #333333; /* Set text color */
+}
+
+.icon-img {
+  margin-right: 10px; /* Add margin to the right of the image */
+}
+
+.navbar-link-list {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-item {
+  margin-right: 20px; /* Add margin between items */
+}
+
+.nav-link-home {
+  text-decoration: none; /* Remove underline */
+  color: #333333; /* Set text color */
+  font-weight: bold; /* Set font weight */
+}
+
+/* Main section */
+main {
+  max-width: 800px; /* Set maximum width */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Add padding */
+}
+
+/* Heading style */
+.fovorite-meal {
+  color: #333333; /* Set text color */
+  font-size: 24px; /* Set font size */
+  margin-bottom: 20px; /* Add margin bottom */
+}
+
+/* Container for favorite meals */
+.favorite-meals-list {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+  grid-gap: 20px; /* Add gap between grid items */
+}
+
+/* Individual meal item style */
+.favorite-meal-item {
+  background-color: #f9f9f9; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 8px; /* Add border radius */
+}
+
+/* Additional styles as needed */
+
+
+/* style for footer */
+.footer {
+  background-color: #333333; /* Set background color */
+  color: #ffffff; /* Set text color */
+  padding: 20px 0; /* Add padding to top and bottom */
+  text-align: center; /* Align text center */
+}
+
+.footer-container {
+  max-width: 800px; /* Set maximum width */
+  margin: 0 auto; /* Center the footer container */
+}
+
+.footer-container p {
+  margin: 0; /* Remove default margin */
+}
