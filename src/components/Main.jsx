@@ -144,19 +144,20 @@ function Main() {
           </div>
         </div>
       </nav>
+
       <header className="header">
         <div className="header-container">
           <div className="food-generator">
             <h2>Food Finder</h2>
             <p className="header-instruction">
-              Get a random Food now by clicking the button below 👇
+              Get a random Food now by clicking the button below
             </p>
             <button
               className="food-finder-button"
               id="getMealBtn"
               onClick={displayRandomMeal}
             >
-              Get Meal
+              Get Random Meal
             </button>
           </div>
           <div className="animation-video">
@@ -164,6 +165,7 @@ function Main() {
           </div>
         </div>
       </header>
+
       <main className="main-container">
         <div className="food-info-container">
           <h1>Your Food</h1>
@@ -187,7 +189,7 @@ function Main() {
                 className="favourite-button"
                 onClick={handleFavorite}
               >
-                Favorite
+                Add Favorite
               </button>
             </div>
           </div>
@@ -212,9 +214,10 @@ function Main() {
           </div>
         </div>
       </main>
+
       <footer className="footer">
         <div className="footer-container">
-          <p>&copy; 2024 FoodFinder.com</p>
+          <p>&copy; Shivaraj 2024 </p>
         </div>
       </footer>
     </div>

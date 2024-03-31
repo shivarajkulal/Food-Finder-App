@@ -11,12 +11,14 @@ function Favorites() {
   // Function to display favorite meals
   const displayFavoriteMeals = () => {
     const favoriteMealsList = document.getElementById("favoriteMealsList");
+    favoriteMealsList.innerHTML = ""; // Clear existing content before displaying
+
     const favoriteMeals =
       JSON.parse(localStorage.getItem("favoriteMeals")) || [];
 
     if (favoriteMeals.length === 0) {
       favoriteMealsList.innerHTML =
-        '<div><img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlM18zZF9yZW5kZXJfc2FkX2hvbWVsZXNzX2RvZ19jYXJ0b29uX2FuaW1hdGlvbl9zdF8wY2YwOWQ0OC05MDA0LTRlY2YtYTkyYS05MzhlZTFkYWIxMDAucG5n.png" alt="empty" width="400px"/><p class="text-center fs-5 text-danger">No favorite meals added yet.</p></div>';
+        '<div class="favor-img"><img src="https://cdn-icons-png.flaticon.com/256/12679/12679422.png" alt="empty" width="200px"/><p class="text-center fs-5 text-danger">No favorite meals added yet.</p></div>';
     } else {
       favoriteMeals.forEach((meal) => {
         const mealElement = createMealCard(meal);
@@ -34,6 +36,8 @@ function Favorites() {
     mealImage.src = meal.strMealThumb;
     mealImage.alt = meal.strMeal;
     mealImage.classList.add("meal-card-image");
+    mealImage.width = 200; // Set the width of the image (adjust as needed)
+    mealImage.height = 200; // Set the height of the image (adjust as needed)
 
     const mealName = document.createElement("h5");
     mealName.textContent = meal.strMeal;
@@ -62,12 +66,11 @@ function Favorites() {
       (meal) => meal.idMeal !== mealToRemove.idMeal
     );
     localStorage.setItem("favoriteMeals", JSON.stringify(updatedFavoriteMeals));
-    displayFavoriteMeals();
+    // You can optionally call displayFavoriteMeals() here if you want the UI to update immediately after removing a meal
   };
 
   return (
     <div>
-      
       <nav className="navbar">
         <div className="navbar-main-container">
           <a className="Brand-icon" href="#">
@@ -90,7 +93,6 @@ function Favorites() {
         <h1 className="fovorite-meal">Favorite Food</h1>
         <div id="favoriteMealsList" className="favorite-meals-list"></div>
       </main>
-
 
       <footer className="footer">
         <div className="footer-container">

@@ -4,6 +4,13 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
+body {
+  font-family: "Roboto", sans-serif; /* Change 'Roboto' to the font you selected */
+}
+#mealName {
+  padding-left: 50px;
+}
+
 .navbar-main-container {
   display: flex; /* Use flexbox for layout */
   align-items: center; /* Align items vertically */
@@ -73,7 +80,13 @@
 .filter-button:hover {
   background-color: #cc4a34; /* Change background color on hover */
 }
-
+.form-selector option {
+  /* Add your option styles here */
+  background-color: #ffffff; /* Example background color */
+  color: #ff6347;/* Example text color */
+/* Example font family */
+  font-size: 14px; /* Example font size */
+}
 /* style for header */
 .header {
   background-color: #ff6347; /* Set background color */
@@ -137,7 +150,7 @@
   padding-right: 50px;
   text-align: justify;
 }
-#mealImage{
+#mealImage {
   padding-left: 50px;
 }
 

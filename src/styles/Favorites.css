@@ -1,8 +1,23 @@
 /* style for navbar */
+body {
+    font-family: 'Roboto', sans-serif; /* Change 'Roboto' to the font you selected */
+}
 .navbar {
   background-color: #ffffff; /* Set background color */
   padding: 10px 20px; /* Add padding */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.remove-button {
+  background-color: #ff5733; /* Change to your desired background color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  padding: 5px 10px; /* Adjust padding as needed */
+  cursor: pointer; /* Add pointer cursor on hover */
+  border-radius: 5px; /* Add some rounded corners */
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a; /* Change to a darker shade on hover */
 }
 
 .navbar-main-container {
