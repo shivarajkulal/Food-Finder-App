@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import diet from "../images/diet.png";
 import { Link } from "react-router-dom";
 import "../styles/Favorites.css";
+
 function Favorites() {
   useEffect(() => {
     displayFavoriteMeals();

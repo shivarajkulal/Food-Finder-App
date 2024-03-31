@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import '../styles/Main.css';
+import "../styles/Main.css";
 import diet from "../images/diet.png";
 import { Link } from "react-router-dom";
-
+import MyComponent from "./MyComponent";
 
 function Main() {
   const [currentMeal, setCurrentMeal] = useState(null);
@@ -105,7 +105,6 @@ function Main() {
 
   return (
     <div className="App">
-
       <nav className="navbar">
         <div className="navbar-main-container">
           <a className="Brand-icon" href="#">
@@ -145,7 +144,6 @@ function Main() {
           </div>
         </div>
       </nav>
-
       <header className="header">
         <div className="header-container">
           <div className="food-generator">
@@ -161,9 +159,11 @@ function Main() {
               Get Meal
             </button>
           </div>
+          <div className="animation-video">
+            <MyComponent />
+          </div>
         </div>
       </header>
-
       <main className="main-container">
         <div className="food-info-container">
           <h1>Your Food</h1>
@@ -191,10 +191,8 @@ function Main() {
               </button>
             </div>
           </div>
-          <hr />
+          <h1>Food Details</h1>
           <div className="food-receipe-container">
-            <h2>Food Details:</h2>
-
             <div className="food-details-container">
               <p>
                 <strong>Category:</strong> <span id="mealCategory"></span>
@@ -214,9 +212,6 @@ function Main() {
           </div>
         </div>
       </main>
-
-      <hr />
-
       <footer className="footer">
         <div className="footer-container">
           <p>&copy; 2024 FoodFinder.com</p>

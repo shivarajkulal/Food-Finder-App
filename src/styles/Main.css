@@ -74,7 +74,6 @@
   background-color: #cc4a34; /* Change background color on hover */
 }
 
-
 /* style for header */
 .header {
   background-color: #ff6347; /* Set background color */
@@ -86,6 +85,9 @@
 .header-container {
   max-width: 800px; /* Set maximum width */
   margin: 0 auto; /* Center the header */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .food-generator {
@@ -118,12 +120,25 @@
   color: #ffffff; /* Change text color on hover */
 }
 
- 
 /* style to main  */
 .main-container {
-  max-width: 800px; /* Set maximum width */
+  max-width: 100%; /* Set maximum width */
   margin: 0 auto; /* Center the main container */
   padding: 20px; /* Add padding */
+}
+
+.main-container h1 {
+  color: #cc4a34;
+  text-align: center;
+}
+
+#mealInstructions {
+  font-size: 13px;
+  padding-right: 50px;
+  text-align: justify;
+}
+#mealImage{
+  padding-left: 50px;
 }
 
 .food-info-container {
@@ -139,7 +154,9 @@
 
 .food-info {
   display: flex; /* Use flexbox for layout */
-  margin-bottom: 20px; /* Add margin bottom */
+  margin-bottom: 20px;
+  justify-content: space-around;
+  /* Add margin bottom */
 }
 
 .food-info-img {
@@ -148,7 +165,7 @@
 
 .food-info-img img {
   max-width: 100%; /* Set maximum width */
-  height: auto; /* Set height auto */
+  height: 50vh; /* Set height auto */
   display: block; /* Make image block element */
 }
 
@@ -185,9 +202,16 @@
 .food-details-container p {
   margin-bottom: 5px; /* Add margin bottom */
 }
+.food-receipe-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
 
+  justify-content: space-around;
+}
 .video-receipe-container {
   margin-top: 20px; /* Add margin top */
+  padding: 50px;
 }
 
 .video-receipe-container .video-receipe {
@@ -231,4 +255,3 @@
 .category-item:last-child {
   margin-right: 0;
 }
-
